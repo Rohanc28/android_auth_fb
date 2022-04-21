@@ -3,28 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
+    android:background="@drawable/ic_bg"
     tools:context=".SignUpActivity">
 
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
-        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#00F1F1F1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:text="DJI Mobile"/>
 
     <TextView
         android:id="@+id/signUpPageTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
+        android:layout_gravity="center"
+        android:background="#00F1F1F1"
         android:text="@string/sign_up"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/primary_text_dark_nodisable" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,48 +37,78 @@
 
         <TextView
             android:id="@+id/signUpEmailTitle"
-            android:layout_width="match_parent"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/email"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <EditText
             android:id="@+id/signUpEmailTextInput"
-            android:layout_width="match_parent"
+            android:layout_width="341dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
+            android:paddingBottom="10dp"
             tools:targetApi="o" />
 
         <TextView
             android:id="@+id/SignUpPasswordTitle"
-            android:layout_width="match_parent"
+            android:layout_width="329dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/password"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <EditText
             android:id="@+id/signUpPasswordTextInput"
-            android:layout_width="match_parent"
+            android:layout_width="341dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/signUpPhoneNumberTitle"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Phone Number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <EditText
+            android:id="@+id/signUpPhoneNumberTextInput"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="+91-1234567890"
+            android:paddingBottom="10dp"
             tools:targetApi="o" />
 
         <CheckBox
             android:id="@+id/agreementCheckbox"
-            android:layout_width="match_parent"
+            android:layout_width="331dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
             android:text="@string/TandC" />
 
         <Button
             android:id="@+id/signUpButton"
-            android:layout_width="match_parent"
+            android:layout_width="216dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_green_light"
             android:text="@string/sign_up" />
 
         <TextView

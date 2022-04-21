@@ -3,27 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+
+    android:background="@drawable/ic_bg"
     android:orientation="vertical"
     tools:context=".WelcomeActivity">
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
-        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#00F1F1F1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:baselineAligned="false"
+        android:text="DJI Mobile "/>
+
 
     <TextView
         android:id="@+id/signUpPageTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
+        android:layout_gravity="center"
+        android:background="#00F1F1F1"
         android:text="@string/welcome"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/primary_text_dark_nodisable" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,18 +37,20 @@
 
         <Button
             android:id="@+id/welcomeSignInButton"
-            android:layout_width="wrap_content"
+            android:layout_width="172dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="12dp"
+            android:background="@android:color/holo_green_light"
             android:text="@string/sign_in" />
 
         <Button
             android:id="@+id/welcomeSignUpButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="172dp"
+            android:layout_height="52dp"
             android:layout_above="@id/welcomeSignInButton"
             android:layout_centerInParent="true"
+            android:background="@android:color/holo_blue_dark"
             android:text="@string/sign_up" />
     </RelativeLayout>
 

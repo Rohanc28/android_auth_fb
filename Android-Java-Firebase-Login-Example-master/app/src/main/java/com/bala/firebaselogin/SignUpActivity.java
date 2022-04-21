@@ -29,6 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button signUpButton;
     EditText signUpEmailTextInput;
     EditText signUpPasswordTextInput;
+    EditText signUpPhoneNumberTextInput;
     CheckBox agreementCheckBox;
     TextView errorView;
 
@@ -42,6 +43,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         signUpEmailTextInput = findViewById(R.id.signUpEmailTextInput);
         signUpPasswordTextInput = findViewById(R.id.signUpPasswordTextInput);
+        signUpPhoneNumberTextInput=findViewById(R.id.signUpPhoneNumberTextInput);
         signUpButton = findViewById(R.id.signUpButton);
         agreementCheckBox = findViewById(R.id.agreementCheckbox);
         errorView = findViewById(R.id.signUpErrorView);
@@ -67,7 +69,10 @@ public class SignUpActivity extends AppCompatActivity {
 
                     errorView.setText("Please agree to terms and Condition");
 
-
+                }else if (signUpPhoneNumberTextInput.getText().toString().contentEquals("")){
+                    errorView.setText("Phone Number cannot be empty");
+                }else if (signUpPhoneNumberTextInput.getText().toString().length()!=10){
+                    errorView.setText("Enter Valid Phone Number");
                 } else {
 
 

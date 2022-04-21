@@ -3,25 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:layout_gravity="center"
     android:orientation="vertical"
+    android:background="@drawable/ic_bg"
     tools:context=".SignInActivity">
 
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
-        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#00F1F1F1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:text="DJI Mobile"/>
 
     <TextView
         android:id="@+id/signUpPageTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F1F1F1"
+        android:layout_gravity="center"
+        android:background="#00F1F1F1"
         android:text="@string/sign_in"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/black" />
@@ -34,60 +38,72 @@
 
         <TextView
             android:id="@+id/signInEmailTitle"
-            android:layout_width="match_parent"
+            android:layout_width="347dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/email"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <EditText
             android:id="@+id/signInEmailTextInput"
-            android:layout_width="match_parent"
+            android:layout_width="354dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
+            android:paddingBottom="10dp"
             tools:targetApi="o" />
 
         <TextView
             android:id="@+id/SignInPasswordTitle"
-            android:layout_width="match_parent"
+            android:layout_width="346dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/password"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <EditText
             android:id="@+id/signInPasswordTextInput"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:paddingBottom="10dp"
             tools:targetApi="o" />
 
         <Button
             android:id="@+id/signInButton"
-            android:layout_width="match_parent"
+            android:layout_width="314dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/sign_in" />
 
         <Button
             android:id="@+id/forgotPasswordButton"
-            android:layout_width="match_parent"
+            android:layout_width="301dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_dark"
             android:text="@string/forgot_password" />
 
         <TextView
             android:id="@+id/signInErrorView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="311dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:text="@string/error_view" />
 
         <Button
             android:id="@+id/verifyEmailAgainButton"
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/email_verify_again" />
 
     </LinearLayout>
